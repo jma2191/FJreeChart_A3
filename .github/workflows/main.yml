@@ -38,7 +38,7 @@ jobs:
           
       - name: compile src/
         run: |
-            javac -d bin -cp bin:lib/*.jar $(find lib/ -name "*.java")
+            javac -d bin -cp bin:lib/*.jar $(find src/ -name "*.java")
      
       - name: compile test/
         run: |
