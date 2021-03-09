@@ -38,7 +38,6 @@ jobs:
           
       - name: compile src/
         run: |
-            javac -d bin -cp bin:lib/*.jar 
             javac -d bin -classpath lib/*.jar $(find src/ -name "*.java")
      
       - name: compile test/
