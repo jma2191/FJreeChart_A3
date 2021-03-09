@@ -38,7 +38,6 @@ jobs:
           
       - name: compile src/
         run: |
-            javac -d bin -classpath lib/*.jar $(find src/ -name "*.java")
             javac -d bin -cp "bin:/lib/jcommon-1.0.0-rc1.jar:lib/jcommon-1.0.5.jar:lib/javax.servlet-api-3.0.1.jar;" MyJavaFile.java
      
       - name: compile test/
